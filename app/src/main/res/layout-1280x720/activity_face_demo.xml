@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+    
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:id="@+id/rllyt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_title_height"
+        android:background="@drawable/tit_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/small_title_text_height"
+            android:gravity="center"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/title_text_color"
+            android:text="@string/title_face_demo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+         >
+        
+		<RelativeLayout
+			android:id="@+id/img_bg"
+			android:layout_width="268dp"
+			android:layout_height="264dp"
+			android:background="@drawable/head_bg02"
+			>
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+				android:layout_centerInParent="true"
+		        >
+				<View 
+					android:layout_width="2dp"
+					android:layout_height="245dp"
+				    />
+		    
+				<ImageView 
+					android:id="@+id/img_ifr"
+					android:layout_width="252dp"
+					android:layout_height="245dp"
+				    />
+		    </LinearLayout>
+		</RelativeLayout>
+		
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_alignBottom="@id/img_bg"
+		    android:layout_alignRight="@id/img_bg"
+		    >
+		    
+		    <ImageButton 
+            	android:id="@+id/btn_pick"
+		        android:layout_width="133dp"
+		        android:layout_height="64dp"
+		        android:background="@drawable/pickimg_button_selector"
+		        />
+		    
+		    <ImageButton 
+            	android:id="@+id/btn_camera"
+		        android:layout_width="133.5dp"
+		        android:layout_height="64dp"
+		        android:background="@drawable/camera_button_selector"
+		        />
+		</LinearLayout>
+		
+		
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/txt_tag_uname"
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:src="@drawable/user"
+            />
+
+        <TextView
+            android:id="@+id/txt_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left" 
+            android:textColor="@color/white"
+            android:textSize="18sp">
+        </TextView>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+         >
+
+		<ImageButton
+            android:id="@+id/btn_face_verify"
+            android:layout_width="125dp"
+            android:layout_height="111dp"
+            android:background="@drawable/verify_button_selector1"
+            android:layout_centerHorizontal="true"
+            />
+        
+
+        <ImageButton
+            android:id="@+id/btn_face_delete"
+            android:layout_width="95dp"
+            android:layout_height="94dp"
+            android:background="@drawable/delete_button_selector"
+            android:layout_toRightOf="@id/btn_face_verify"
+            android:layout_marginTop="40sp"
+            />
+        
+        <ImageButton
+            android:id="@+id/btn_face_enroll"
+            android:layout_width="95dp"
+            android:layout_height="94dp"
+            android:background="@drawable/reg_button_selector"
+            android:layout_toLeftOf="@id/btn_face_verify"
+            android:layout_marginTop="40sp"
+            />
+    </RelativeLayout>
+    
+</LinearLayout>

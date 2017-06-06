@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <!--  标题栏 -->
+    <RelativeLayout
+        android:id="@+id/vocal_rllyt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_title_height"
+        android:background="@drawable/tit_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/vocal_txt_title"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/small_title_text_height"
+            android:gravity="center"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/title_text_color"
+            android:text="@string/title_vocal_demo"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+	    android:background="@drawable/mid_button_selector"
+        >
+		
+	    <TextView
+	        android:id="@+id/vocal_edt_result"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="top|left"
+	        android:maxLines="4"
+	        android:minLines="4"
+	        android:background="@null"
+	        android:textColor="#FFFFFF"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="20sp"
+	         />
+		
+	</RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/vocal_txt_tag_uname"
+            android:layout_width="18dp"
+            android:layout_height="19dp"
+            android:background="@drawable/user"
+            />
+
+        <TextView
+            android:id="@+id/vocal_txt_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="18sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/vocal_radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RadioButton
+                android:id="@+id/vocal_radioEnroll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/effect_radio"
+                android:textColor="@drawable/radio_button_selector"
+                android:text=" 声纹注册"
+                android:textSize="18sp" >
+            </RadioButton>
+            
+          <RadioButton
+                android:id="@+id/vocal_radioVerify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/effect_radio"
+                android:textColor="@drawable/radio_button_selector"
+                android:text=" 声纹验证"
+                android:textSize="18sp" >
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         >
+        
+        <ImageButton
+            android:id="@+id/btn_vocal_press_to_talk"
+            android:layout_width="107dp"
+            android:layout_height="95dp"
+            android:background="@drawable/isv_presstalk_button_selector"
+            android:contentDescription="按住说话"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        
+        <ImageButton
+            android:id="@+id/btn_vocal_query"
+            android:layout_width="90dp"
+            android:layout_height="89dp"
+            android:background="@drawable/isv_querymodel_button_selector"
+            android:contentDescription="查询模型"
+            android:layout_toLeftOf="@id/btn_vocal_press_to_talk"
+            android:layout_marginTop="30dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_vocal_delete"
+            android:layout_width="90dp"
+            android:layout_height="89dp"
+            android:background="@drawable/isv_deletemodel_button_selector"
+            android:contentDescription="删除模型"
+            android:layout_toRightOf="@id/btn_vocal_press_to_talk"
+            android:layout_marginTop="30dp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

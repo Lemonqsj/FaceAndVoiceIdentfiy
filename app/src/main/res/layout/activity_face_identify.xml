@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+    
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:id="@+id/face_idf_rllyt_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_title_height"
+        android:background="@drawable/tit_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/face_idf_txt_title"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/small_title_text_height"
+            android:gravity="center"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/title_text_color"
+            android:text="@string/title_face_idf"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/face_idf_rl_img"
+        android:layout_width="236dp"
+        android:layout_height="233dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+         >
+        
+		<RelativeLayout
+		    android:id="@+id/face_idf_img_bg"
+			android:layout_width="236dp"
+			android:layout_height="233dp"
+			android:background="@drawable/head_bg02"
+			>
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+				android:layout_centerInParent="true"
+		        >
+				<View 
+					android:layout_width="2dp"
+					android:layout_height="215dp"
+				    />
+				<ImageView 
+					android:id="@+id/face_idf_img_ifr"
+					android:layout_width="222dp"
+					android:layout_height="215dp"
+				    />
+		    </LinearLayout>
+		</RelativeLayout>
+		
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_alignBottom="@id/face_idf_img_bg"
+		    android:layout_alignRight="@id/face_idf_img_bg" >
+		    
+		    <ImageButton 
+            	android:id="@+id/face_idf_btn_pick"
+		        android:layout_width="117dp"
+		        android:layout_height="56dp"
+		        android:background="@drawable/pickimg_button_selector" />
+		    
+		    <ImageButton 
+            	android:id="@+id/face_idf_btn_camera"
+		        android:layout_width="117.5dp"
+		        android:layout_height="56dp"
+		        android:background="@drawable/camera_button_selector" />
+		</LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/face_idf_txt_tag_groupid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="组ID："
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/face_idf_txt_groupid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_btn_face_idf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+         >
+
+		<ImageButton
+            android:id="@+id/btn_face_idf"
+            android:layout_width="110dp"
+            android:layout_height="98dp"
+            android:background="@drawable/face_identify_button_selector"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    
+</LinearLayout>

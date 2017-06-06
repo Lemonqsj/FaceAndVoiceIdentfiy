@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 分辨率为1280*720 -->
+    <!-- 共用变量 -->
+	<!-- 标题Layout高度 -->
+    <dimen name="title_height">55dp</dimen>
+    <!-- 标题图片高度 -->
+    <dimen name="title_image_height">30dp</dimen>
+    <!-- 标题文字大小 -->
+    <dimen name="title_text_size">26sp</dimen>
+    <!-- 标题栏按钮大小 -->
+    <dimen name="title_button_size">55dp</dimen>
+    <!-- 标题栏按钮左右边距 -->
+    <dimen name="title_button_margin">10dp</dimen>
+    <!-- EditText中的文字大小 -->
+    <dimen name="edit_txt_size">20sp</dimen>
+    <!-- back按钮左边距 -->
+    <dimen name="back_left_margin">15dp</dimen>
+    <!-- 页面最宽控件的左右边距-->
+    <dimen name="max_ui_margin">10dp</dimen>
+    <!-- 页面底部layout的下边距-->
+    <dimen name="bottom_layout_margin_bottom">15dp</dimen>
+    <!-- 快门按钮大小 -->
+    <dimen name="shutter_button_size">80dp</dimen>
+    <!-- 输入框高度 -->
+    <dimen name="edit_layout_height">35dp</dimen>
+    <!-- 分隔线高度 -->
+    <dimen name="divide_line_height">10dp</dimen>
+    <!-- 弹出菜单宽度 -->
+    <dimen name="popupmenu_width">200dp</dimen>
+    <!-- 菜单项字体大小 -->
+    <dimen name="popupmenu_text_size">20sp</dimen>
+    <!-- 菜单选项高度 -->
+    <dimen name="popupmenu_item_height">50dp</dimen>
+    
+    <!-- 主界面 -->
+    <!-- 主界面头相大小 -->
+    <dimen name="main_icon_size">160dp</dimen>
+    <!-- 头相边框宽 -->
+    <dimen name="main_icon_border_width">2dp</dimen>
+    <!-- 主界面用户名文字大小 -->
+    <dimen name="main_username_txt_size">20sp</dimen>
+    <!-- 主界面按键高度 -->
+    <dimen name="main_button_layout_height">70dp</dimen>
+    <!-- 主界面按键左右边距 -->
+    <dimen name="main_button_layout_margin">20dp</dimen>
+    <!-- 主界面按键左右padding -->
+    <dimen name="main_button_padding">10dp</dimen>
+    
+    <!-- 注册页面 -->
+    <!-- 第一个layout到title layout的上边距-->
+    <dimen name="layout_to_title_margin_top">30dp</dimen>
+	<!-- 注册提示文字大小 -->
+    <dimen name="reg_hint_txt_size">15sp</dimen>
+    <!-- 注册提示文字左右边距 -->
+    <dimen name="reg_hint_txt_margin">20dp</dimen>
+    
+    <!-- 拍照页面 -->
+    <dimen name="hint_text_size">24sp</dimen>
+    <dimen name="hint_margin_top">10dp</dimen>
+    
+    <!-- 人脸注册页面 -->
+    <!-- 底部按钮所在layout高 -->
+    <dimen name="button_parent_layout_height">70dp</dimen>
+    
+    <!-- 声纹注册页面 -->
+    <!-- 提示文字大小 -->
+    <dimen name="vocal_register_hint_txt_size">18sp</dimen>
+    
+    <!-- 登录、挑战拍照页面 -->
+    <!-- 标题文字大小 -->
+    <dimen name="title_oppo_txt_size">24sp</dimen>
+    <dimen name="title_vs_txt_size">28sp</dimen>
+    <!-- 密码layout左右边距 -->
+    <dimen name="login_pwd_layout_margin">15dp</dimen>
+    <!-- 读数字提示文字大小 -->
+    <dimen name="read_num_hint_txt_size">18sp</dimen>
+    <!-- 数字密码文字大小 -->
+    <dimen name="num_pwd_txt_size">36sp</dimen>
+    
+    <!-- 挑战准备页面 -->
+    <!-- 头像父layout左右边距 -->
+    <dimen name="pk_icon_layout_margin">10dp</dimen>
+    <!-- 头像大小 -->
+    <dimen name="pk_icon_size">90dp</dimen>
+    <!-- 头像圆框宽度 -->
+    <dimen name="pk_icon_border_width">2dp</dimen>
+    
+    <!-- 选择好友页面 -->
+    <!-- 好友列表上边距 -->
+    <dimen name="friend_list_margin_top">40dp</dimen>
+    <!-- 好友列表中头相大小 -->
+    <dimen name="list_icon_size">70dp</dimen>
+    <dimen name="list_icon_border_width">3dp</dimen>
+    <dimen name="list_txt_size">21sp</dimen>
+    <!-- pk按钮大小 -->
+    <dimen name="list_pk_button_size">70dp</dimen>
+    
+    <!-- 挑战结果页面 -->
+    <dimen name="simi_hint_txt_size">14sp</dimen>
+    <dimen name="simi_txt_size">28sp</dimen>
+    <dimen name="face_simi_txt_size">24sp</dimen>
+    <dimen name="vocal_simi_txt_size">24sp</dimen>
+    <dimen name="bonus_hint_txt_size">20sp</dimen>
+    
+    <!-- 关于页面 -->
+    <dimen name="about_margin_Top">20dp</dimen>
+    <dimen name="about_margin_left">10dp</dimen>
+    <dimen name="about_margin_right">10dp</dimen>
+    <dimen name="about_margin_bottom">10dp</dimen>
+    <dimen name="about_margin_bottom2">23dp</dimen>
+    <dimen name="about_txt_size2">16sp</dimen>
+    <dimen name="about_txt_size3">18sp</dimen>
+    <dimen name="about_txt_bottom_size">14sp</dimen>
+
+    <!-- 分辨率为800*480的小屏手机 -->
+    <!-- 共用变量 -->
+	<!-- 标题Layout高度 -->
+    <dimen name="small_title_height">50dp</dimen>
+    <!-- 标题图片高度 -->
+    <dimen name="small_title_text_height">30dp</dimen>
+    <!-- 标题文字大小 -->
+    <dimen name="small_title_text_size">24sp</dimen>
+    <!-- 标题栏按钮大小 -->
+    <dimen name="small_title_button_size">50dp</dimen>
+    <!-- 标题栏按钮左右边距 -->
+    <dimen name="small_title_button_margin">10dp</dimen>
+    <!-- EditText中的文字大小 -->
+    <dimen name="small_edit_txt_size">18sp</dimen>
+    <!-- back按钮左边距 -->
+    <dimen name="small_back_left_margin">15dp</dimen>
+    <!-- 页面最宽控件的左右边距-->
+    <dimen name="small_max_ui_margin">10dp</dimen>
+    <!-- 页面底部layout的下边距-->
+    <dimen name="small_bottom_layout_margin_bottom">15dp</dimen>
+    <!-- 快门按钮大小 -->
+    <dimen name="small_shutter_button_size">70dp</dimen>
+    <!-- 输入框高度 -->
+    <dimen name="small_edit_layout_height">28dp</dimen>
+    <!-- 分隔线高度 -->
+    <dimen name="small_divide_line_height">10dp</dimen> 
+    
+    <!-- 主界面 -->
+    <!-- 主界面头相大小 -->
+    <dimen name="small_main_icon_size">120dp</dimen>
+    <!-- 头相边框宽 -->
+    <dimen name="small_main_icon_border_width">2dp</dimen>
+    <!-- 主界面用户名文字大小 -->
+    <dimen name="small_main_username_txt_size">20sp</dimen>
+    <!-- 主界面按键高度 -->
+    <dimen name="small_main_button_layout_height">54dp</dimen>
+    <!-- 主界面按键左右边距 -->
+    <dimen name="small_main_button_layout_margin">20dp</dimen>
+    <!-- 主界面按键左右padding -->
+    <dimen name="small_main_button_padding">15dp</dimen>
+    
+    <!-- 注册页面 -->
+    <!-- 第一个layout到title layout的上边距-->
+    <dimen name="small_layout_to_title_margin_top">30dp</dimen>
+	<!-- 注册提示文字大小 -->
+    <dimen name="small_reg_hint_txt_size">16sp</dimen>
+    <!-- 注册提示文字左右边距 -->
+    <dimen name="small_reg_hint_txt_margin">20dp</dimen>
+    
+    <!-- 拍照页面 -->
+    <dimen name="small_hint_text_size">24sp</dimen>
+    <dimen name="small_hint_margin_top">10dp</dimen>
+    
+    <!-- 选择好友页面 -->
+    <!-- 好友列表上边距 -->
+    <dimen name="small_friend_list_margin_top">40dp</dimen>
+    <!-- 好友列表中头相大小 -->
+    <dimen name="small_list_icon_size">60dp</dimen>
+    <dimen name="small_list_icon_border_width">2dp</dimen>
+    <dimen name="small_list_txt_size">18sp</dimen>
+    <!-- pk按钮大小 -->
+    <dimen name="small_list_pk_button_size">60dp</dimen>
+    
+ 	<dimen name="title_margin_left">16dp</dimen>
+    <dimen name="title_margin_right">16dp</dimen>
+    <dimen name="title_padding">10dp</dimen>
+    <dimen name="listitem_height">50dp</dimen>
+    <dimen name="listitem_margin_left">11dp</dimen>
+    <dimen name="listitem_margin_right">11dp</dimen>
+    <dimen name="item_content_margin_left">5dp</dimen>
+    <dimen name="item_content_margin_right">5dp</dimen>
+</resources>

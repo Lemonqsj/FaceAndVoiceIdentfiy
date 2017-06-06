@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.lemon.faceandvoiceidentfiy">
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 使用照相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <!-- 自动对焦权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <!-- SDCard中\卸载权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- SDCard写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 开启闪光灯权限 -->
+    <permission android:name="android.permission.FLASHLIGHT"/>
+    <!--连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <!--读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_demo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.example.lemon.faceandvoiceidentfiy.app.DemoApp" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FaceVerifyDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".VocalVerifyDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 混合验证页面 -->
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.mixedverify.MixedVerifyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.testCameraIdentifyFace"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 混合验证结果页面 -->
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.mixedverify.VerifyResultActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 组管理页面 -->
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.identify.GroupManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan">
+        </activity>
+        <!-- 声纹鉴别页面 -->
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.identify.VocalIdentifyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 人脸鉴别页面 -->
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.identify.FaceIdentifyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.identify.testvideoIdentifyFace"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 鉴别结果页面 -->
+        <activity
+            android:name="com.example.lemon.faceandvoiceidentfiy.identify.ResultIdentifyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

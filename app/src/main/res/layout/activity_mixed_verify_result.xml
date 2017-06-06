@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/black">
+    
+    <ImageView
+        android:id="@+id/pic_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:scaleType="centerCrop" />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg4"
+        android:scaleType="centerCrop"/>
+    
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_title_height"
+        android:background="@drawable/tit_bg" >
+
+        <RelativeLayout 
+            android:id="@+id/rllyt_title_login"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent">
+        
+	    	<TextView
+	            android:id="@+id/txt_title"
+	            android:layout_width="match_parent"
+	            android:layout_centerVertical="true"
+	        	android:layout_height="@dimen/title_image_height"
+	            android:gravity="center"
+	            android:textSize="@dimen/title_text_size"
+	            android:textColor="@color/title_text_color"
+	            android:text="@string/login_result_txt_title"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        
+	    
+	    <!-- 中间内容 -->
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" >
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_centerInParent="true"
+	            android:gravity="center_horizontal">
+	            
+	            <ImageView 
+	                android:id="@+id/img_challenge_result"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/success"/>
+	            
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	                <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left|bottom"
+		                android:text="相似度"
+		                android:textColor="@color/text_color_gray"
+		                android:textSize="@dimen/simi_hint_txt_size"/>
+	            
+		            <TextView 
+		                android:id="@+id/txt_similarity"
+		                android:layout_weight="1"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="bottom|center_horizontal"
+		                android:gravity="center_horizontal"
+		                android:maxLength="6"
+		                android:text="98.25%"
+		                android:textColor="@color/text_color_bright_green"
+		                android:textSize="@dimen/simi_txt_size"/>
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left|bottom"
+	                android:orientation="horizontal">
+	                
+	                <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="人脸相似度"
+		                android:textColor="@color/text_color_gray"
+		                android:textSize="@dimen/simi_hint_txt_size"/>
+	            
+		            <TextView 
+		                android:id="@+id/txt_face_similarity"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="98.25%"
+		                android:maxLength="6"
+		                android:textColor="@color/text_color_bright_green"
+		                android:textSize="@dimen/face_simi_txt_size"/>
+	                
+	            </LinearLayout>
+	            
+	            <LinearLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:orientation="horizontal">
+	                
+	                <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="声音相似度"
+		                android:textColor="@color/text_color_gray"
+		                android:textSize="@dimen/simi_hint_txt_size"/>
+	            
+		            <TextView 
+		                android:id="@+id/txt_vocal_similarity"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="98.25%"
+		                android:gravity="center"
+		                android:maxLength="6"
+		                android:textColor="@color/text_color_bright_green"
+		                android:textSize="@dimen/vocal_simi_txt_size"/>
+	                
+	            </LinearLayout>
+	            
+	        </LinearLayout>
+	        
+	        <TextView 
+	            android:id="@+id/txt_bonus_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+                android:text="恭喜你，获得精美礼品一份！"
+                android:textColor="#a2cbed"
+                android:textSize="@dimen/bonus_hint_txt_size"
+                android:visibility="invisible"/>
+				        
+	    </RelativeLayout>
+        
+	    <!-- 底部按钮 -->
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="70dp"
+	        android:background="@drawable/result_foot_bg"
+	        android:orientation="vertical">
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/button_parent_layout_height"
+	            android:layout_marginTop="5dp">
+	        
+		        <RelativeLayout
+		            android:id="@+id/bottom_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp">
+		
+			        <ImageButton
+			            android:id="@+id/btn_again"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:background="@drawable/left_button_selector"
+			            android:src="@drawable/again"/>
+		         
+			        <ImageButton
+			            android:id="@+id/btn_home"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:background="@drawable/right_button_selector"
+			            android:src="@drawable/back_home"/>
+		
+		     	 </RelativeLayout>
+	     	 
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+    </LinearLayout>
+    
+</RelativeLayout>

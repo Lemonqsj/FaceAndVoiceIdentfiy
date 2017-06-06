@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ConfirmActivity" >
+
+    <!-- 相机预览 -->
+    <SurfaceView 
+        android:id="@+id/sfv_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!-- 标题栏 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+	    <RelativeLayout 
+	        android:id="@+id/surface_title"
+	        android:layout_width="match_parent"
+	   	    android:layout_height="@dimen/title_height"
+	   	    android:background="@drawable/tit_bg">
+	   	   
+	        <ImageButton
+	            android:id="@+id/btn_flash_switch"
+	            android:layout_width="@dimen/title_button_size"
+               	android:layout_height="@dimen/title_button_size"
+	            android:scaleType="centerInside"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/flash_open"
+	            android:background="@drawable/title_button_selector"
+	            android:alpha="1" />
+	        
+	        <TextView
+	            android:id="@+id/txt_title"
+	            android:layout_width="match_parent"
+	            android:layout_centerVertical="true"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:textSize="@dimen/title_text_size"
+	            android:textColor="@color/title_text_color"
+	            android:text="@string/login_txt_title"/>
+	        
+	        <ImageButton 
+	            android:id="@+id/btn_change_camera"
+	            android:layout_width="@dimen/title_button_size"
+                android:layout_height="@dimen/title_button_size"
+	            android:scaleType="centerInside"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/camera"
+	            android:background="@drawable/title_button_selector"/>
+	        
+	    </RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/llyt_face_frame" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"/>
+            
+            <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="3"
+	            android:src="@drawable/view_frame"/>
+            
+			<View 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+			            
+        </LinearLayout>
+	   
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center_horizontal">
+	        
+	        <View 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"/>
+	        
+	        <FrameLayout
+		        android:id="@+id/fllyt_vol"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="3"
+		        android:orientation="horizontal" >
+			    
+		        <ImageButton
+		            android:id="@+id/btn_record"
+		            android:layout_width="110dp"
+		            android:layout_height="110dp"
+		            android:background="@drawable/mic_button_selector"
+		            android:layout_gravity="bottom|center_horizontal" 
+		            android:layout_marginBottom="@dimen/bottom_layout_margin_bottom"
+		            />
+		    </FrameLayout>
+	        
+	    </LinearLayout>
+	    
+	           <LinearLayout 
+            android:id="@+id/llyt_num_pwd_hint"
+            android:layout_below="@id/surface_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#662a323f"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            
+            <TextView 
+                android:id="@+id/txt_hint"
+                android:layout_below="@id/surface_title"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/hint_margin_top"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:text="@string/login_operation_hint"
+                android:textSize="22sp" />
+        
+            <TextView 
+                android:id="@+id/txt_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_pwd_layout_margin"
+                android:layout_marginRight="@dimen/login_pwd_layout_margin"
+                android:gravity="center"
+                android:background="@drawable/num_bg"
+                android:text="3926 7485"
+                android:textColor="@color/text_color_bright_gray"
+                android:textSize="@dimen/num_pwd_txt_size"/>
+            
+        </LinearLayout>
+	    
+    </RelativeLayout>
+     
+</RelativeLayout>

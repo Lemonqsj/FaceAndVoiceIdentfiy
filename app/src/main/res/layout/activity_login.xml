@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:drop="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:gravity="center_horizontal"
+			  android:orientation="vertical"
+			  android:background="@drawable/bg">
+
+	<!-- 标题栏 -->
+	<RelativeLayout
+		android:id="@+id/rllyt_title"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/small_title_height"
+		android:background="@drawable/tit_bg"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:id="@+id/txt_login_title"
+			android:layout_width="match_parent"
+			android:layout_centerVertical="true"
+			android:layout_height="@dimen/small_title_text_height"
+			android:gravity="center"
+			android:textSize="@dimen/title_text_size"
+			android:textColor="@color/title_text_color"
+			android:text="@string/title_demo"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/llyt_name_input_panel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/mid_button_selector"
+		android:orientation="vertical"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:visibility="visible" >
+
+		<EditText
+			android:id="@+id/edt_username"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCEDFGHIJKLMNOPQRSTUVWXYZ_"
+			android:background="#00000000"
+			android:ems="20"
+			android:hint="请输入用户名"
+			android:maxLength="20"
+			android:singleLine="true"
+			android:inputType="textUri"
+			android:gravity="center_vertical"
+			android:textSize="@dimen/small_edit_txt_size"
+			android:textColor="@color/edit_text_color_bright_bg"
+			android:textColorHint="@color/edit_text_color_bright_bg">
+		</EditText>
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/btn_confirm"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:background="@drawable/full_button_selector"
+	>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/confirm"
+			android:layout_centerHorizontal="true"
+		/>
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/txt_tip"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:lineSpacingMultiplier="1.5"
+		android:text="@string/tip_auth_id"
+		android:textColor="#729de7"
+		android:textSize="18sp" />
+
+
+	<!-- 鉴别 -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:orientation="vertical" >
+
+		<com.example.lemon.faceandvoiceidentfiy.ui.DropEditText
+			android:id="@+id/drop_edit"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			drop:drawableRight="@drawable/drop"
+			drop:dropMode="flower_parent"
+			drop:hint="请输入组ID" />
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="45dp"
+			android:layout_marginTop="10dp"
+			android:orientation="horizontal" >
+
+			<RelativeLayout
+				android:id="@+id/btn_idf_speech"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:background="@drawable/full_button_selector"
+				android:gravity="center" >
+
+				<TextView
+					android:id="@+id/txt_idf_speech"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5dp"
+					android:layout_centerInParent="true"
+					android:text="@string/txt_idf_speech"
+					android:textColor="@color/white" />
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_toLeftOf="@id/txt_idf_speech"
+					android:src="@drawable/icon_speech"
+					android:contentDescription="@string/app_name" />
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:id="@+id/btn_idf_face"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:layout_alignParentRight="true"
+				android:background="@drawable/full_button_selector" >
+
+				<TextView
+					android:id="@+id/txt_idf_face"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="5dp"
+					android:layout_centerInParent="true"
+					android:text="@string/txt_idf_face"
+					android:textColor="@color/white" />
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_toLeftOf="@id/txt_idf_face"
+					android:src="@drawable/icon_face"
+					android:contentDescription="@string/app_name" />
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
